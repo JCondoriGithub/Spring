@@ -1,0 +1,29 @@
+package springhello;
+
+import static org.junit.jupiter.api.Assertions.*;
+
+import java.util.Map;
+
+import org.junit.jupiter.api.Test;
+import org.springframework.context.support.ClassPathXmlApplicationContext;
+
+class SpringTest {
+
+	@Test
+	void test() {
+
+		ClassPathXmlApplicationContext ctx = new ClassPathXmlApplicationContext("beans.xml");
+		System.out.println("ctx: " + ctx);
+		User u = ctx.getBean(User.class);	// se ci sono più bean della classe, si deve almeno specificare il nome del bean
+		System.out.println("prendi bean per classe: " + u);
+		
+		User u1 = ctx.getBean("u1", User.class);
+		System.out.println("prendi bean per nome: " + u1);
+		
+		Map<String, User> res = ctx.getBeansOfType(User.class);
+		for(String user: res.keySet()) {
+			System.out.println(user);
+		}
+	}
+
+}
