@@ -21,20 +21,14 @@ public class User implements InitializingBean, DisposableBean {
 
 	@Override
 	public void afterPropertiesSet() throws Exception {
-		System.out.println("afterPropertiesSet");
+		// TODO Auto-generated method stub
+		
 	}
 	
 	@Override
 	public void destroy() throws Exception {
-		System.out.println("destroy");		
-	}
-	
-	public void myInit() {
-		System.out.println("myInit");
-	}
-	
-	public void myDestroy() {
-		System.out.println("myDestroy");
+		// TODO Auto-generated method stub
+		
 	}
 
 	public String getLogin() {

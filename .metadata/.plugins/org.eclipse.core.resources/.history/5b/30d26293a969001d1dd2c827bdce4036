@@ -1,9 +1,6 @@
 package springhello;
 
-import org.springframework.beans.factory.InitializingBean;
-import org.springframework.beans.factory.DisposableBean;
-
-public class User implements InitializingBean, DisposableBean {
+public class User {
 
 	private String login, password, name, surname;
 
@@ -17,24 +14,6 @@ public class User implements InitializingBean, DisposableBean {
 		this.password = password;
 		this.name = name;
 		this.surname = surname;
-	}
-
-	@Override
-	public void afterPropertiesSet() throws Exception {
-		System.out.println("afterPropertiesSet");
-	}
-	
-	@Override
-	public void destroy() throws Exception {
-		System.out.println("destroy");		
-	}
-	
-	public void myInit() {
-		System.out.println("myInit");
-	}
-	
-	public void myDestroy() {
-		System.out.println("myDestroy");
 	}
 
 	public String getLogin() {

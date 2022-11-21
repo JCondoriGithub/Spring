@@ -24,12 +24,5 @@ class SpringTest {
 		
 		ctx.close();	// si finalizza il container distruggendo tutti i bean
 	}
-/*
-afterPropertiesSet
-myInit
-getBean per nome/id: User [login=null, password=null, name=Mario, surname=Rossi]
-User [login=null, password=null, name=Mario, surname=Rossi]
-destroy
-myDestroy
- */
+
 }
