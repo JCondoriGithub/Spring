@@ -12,10 +12,9 @@ class SpringTest {
 	@Test
 	void test() {
 
-		ClassPathXmlApplicationContext ctx = new ClassPathXmlApplicationContext("beans.xml");	// a differenza del singleton, in prototype si genera l'instanza del bean solo quando viene chiamato
-																								//perche è a generazione LAZY. Anche in singleton è possibile, ma verrà generato solo una volta
+		ClassPathXmlApplicationContext ctx = new ClassPathXmlApplicationContext("beans.xml");
 		System.out.println("ctx: " + ctx);
-		User u = ctx.getBean(User.class);
+		User u = ctx.getBean(User.class);	// se ci sono più bean della classe, si deve almeno specificare il nome/id del bean
 		System.out.println("getBean per classe: " + u);
 		
 		User u1 = ctx.getBean("u1", User.class);
