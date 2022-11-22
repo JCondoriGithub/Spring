@@ -24,10 +24,6 @@ public class User implements InitializingBean, DisposableBean {
 		this.name = name;
 		this.group = group;
 	}
-	
-	public static User createInstance(String name, Group group) {
-		return new User(name, group);
-	}
 
 	@Override
 	public void afterPropertiesSet() throws Exception {

@@ -18,9 +18,10 @@
     
     <bean id="userfactory" class="springhello.UserFactory"></bean>
     
-    <bean id="u2" class="springhello.User" factory-bean="userfactory" factory-method="createUser">
+    <bean id="u2" class="springhello.User" factory-method="createInstance">		<!-- si invoca la factory interna alla classe  -->
     	<constructor-arg name="name" value="Antonio"></constructor-arg>
     	<constructor-arg name="group" ref="admingroup"></constructor-arg>
-    </bean>		<!-- per gli altri attributi si possono invocare i setter -->
+    	<property name="surname" value="Rossi"></property>
+    </bean>
     
 </beans>

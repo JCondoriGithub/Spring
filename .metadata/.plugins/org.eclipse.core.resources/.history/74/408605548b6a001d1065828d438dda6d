@@ -18,7 +18,7 @@
     
     <bean id="userfactory" class="springhello.UserFactory"></bean>
     
-    <bean id="u2" class="springhello.User" factory-method="createInstance">		<!-- si invoca la factory interna alla classe  -->
+    <bean id="u2" class="springhello.User" factory-method="createInstance">
     	<constructor-arg name="name" value="Antonio"></constructor-arg>
     	<constructor-arg name="group" ref="admingroup"></constructor-arg>
     	<property name="surname" value="Rossi"></property>
