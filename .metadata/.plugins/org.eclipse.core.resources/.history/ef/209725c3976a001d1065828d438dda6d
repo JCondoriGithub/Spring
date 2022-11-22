@@ -14,7 +14,7 @@ class SpringTest {
 	void test() {
 
 		ClassPathXmlApplicationContext ctx = new ClassPathXmlApplicationContext("beans.xml");
-		FileSystemXmlApplicationContext ctx2 = new FileSystemXmlApplicationContext(new String[] {"file:/home/josue/Scrivania/spring/testContext/beans.xml"}, ctx);	// si dichiara che questo container deriva da "ctx"
+		FileSystemXmlApplicationContext ctx2 = new FileSystemXmlApplicationContext(new String[] {"/home/josue/testContext/beans.xml"}, ctx);
 
 		User u1 = ctx2.getBean("u1", User.class);
 		System.out.println("u1: " + u1);

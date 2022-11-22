@@ -4,7 +4,9 @@ import org.springframework.beans.factory.InitializingBean;
 
 public class Group implements InitializingBean {
 
-	private String name;	
+	private String name;
+	private double id;
+	
 	
 	public Group() {
 		
@@ -12,7 +14,8 @@ public class Group implements InitializingBean {
 	
 	@Override
 	public void afterPropertiesSet() throws Exception {
-		System.out.println("afterPropertiesSet_Group");
+		System.out.println("afterPropertiesSetGroup");
+		id = Math.random();
 	}
 
 	public String getName() {

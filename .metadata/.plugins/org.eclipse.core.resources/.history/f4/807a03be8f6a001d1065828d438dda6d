@@ -31,7 +31,7 @@ public class User implements InitializingBean, DisposableBean {
 
 	@Override
 	public void afterPropertiesSet() throws Exception {
-		System.out.println("afterPropertiesSet_User");
+		System.out.println("afterPropertiesSet");
 	}
 	
 	@Override

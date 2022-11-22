@@ -7,6 +7,7 @@ public class User implements InitializingBean, DisposableBean {
 
 	private String login, password, name, surname;
 	private Group group;
+	private double id;
 
 	public User() {
 
@@ -31,7 +32,8 @@ public class User implements InitializingBean, DisposableBean {
 
 	@Override
 	public void afterPropertiesSet() throws Exception {
-		System.out.println("afterPropertiesSet_User");
+		System.out.println("afterPropertiesSet");
+		id = Math.random();
 	}
 	
 	@Override

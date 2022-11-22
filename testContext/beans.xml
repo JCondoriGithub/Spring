@@ -6,21 +6,21 @@
         http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context-3.0.xsd">
 
 	<bean id="admingroup" class="springhello.Group">
-		<property name="name" value="ADMIN"></property>
+		<property name="name" value="AMMINISTRATORI"></property>	<!-- si modifica "name" -->
 	</bean>
 
     <bean id="u1" class="springhello.User" scope="singleton" init-method="myInit" destroy-method="myDestroy">
 		<constructor-arg name="name" value="Carlo"></constructor-arg>
 		<constructor-arg name="group" ref="admingroup"></constructor-arg>
-    	<property name="surname" value="Rossi"></property>
+    		<property name="surname" value="Rossi"></property>
     </bean>
     
     <bean id="userfactory" class="springhello.UserFactory"></bean>
     
     <bean id="u2" class="springhello.User" factory-method="createInstance">
-    	<constructor-arg name="name" value="Antonio"></constructor-arg>
+    	<constructor-arg name="name" value="Luca"></constructor-arg>
     	<constructor-arg name="group" ref="admingroup"></constructor-arg>
-    	<property name="surname" value="Rossi"></property>
-    </bean>
+    	<property name="surname" value="Penzoni"></property>
+    </bean>	<!-- si modifica "name" e "surname" -->
     
 </beans>

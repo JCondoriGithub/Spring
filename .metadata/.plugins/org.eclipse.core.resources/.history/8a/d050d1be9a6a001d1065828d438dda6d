@@ -11,13 +11,14 @@
 
     <bean id="u1" class="springhello.User" scope="singleton" init-method="myInit" destroy-method="myDestroy">
 		<constructor-arg name="name" value="Carlo"></constructor-arg>
-		<constructor-arg name="group" ref="admingroup"></constructor-arg>
-    	<property name="surname" value="Rossi"></property>
+		<constructor-arg name="group" ref="admingroup"></constructor-arg>	<!-- si chiama il costruttore che ha questi parametri -->
+    	<property name="surname" value="Rossi"></property>	<!-- per gli altri attributi si invocano i setter -->
+    	<!-- <property name="group" ref="admingroup"></property>-->
     </bean>
     
     <bean id="userfactory" class="springhello.UserFactory"></bean>
     
-    <bean id="u2" class="springhello.User" factory-method="createInstance">
+    <bean id="u2" class="springhello.User" factory-method="createInstance">		<!-- si invoca la factory interna alla classe  -->
     	<constructor-arg name="name" value="Antonio"></constructor-arg>
     	<constructor-arg name="group" ref="admingroup"></constructor-arg>
     	<property name="surname" value="Rossi"></property>
