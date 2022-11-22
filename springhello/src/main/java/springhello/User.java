@@ -6,6 +6,7 @@ import org.springframework.beans.factory.DisposableBean;
 public class User implements InitializingBean, DisposableBean {
 
 	private String login, password, name, surname;
+	private Group group;
 
 	public User() {
 
@@ -69,9 +70,18 @@ public class User implements InitializingBean, DisposableBean {
 		this.surname = surname;
 	}
 
+	public Group getGroup() {
+		return group;
+	}
+
+	public void setGroup(Group group) {
+		this.group = group;
+	}
+
 	@Override
 	public String toString() {
-		return "User [login=" + login + ", password=" + password + ", name=" + name + ", surname=" + surname + "]";
+		return "User [login=" + login + ", password=" + password + ", name=" + name + ", surname=" + surname
+				+ ", group=" + group + "]";
 	}
 	
 }

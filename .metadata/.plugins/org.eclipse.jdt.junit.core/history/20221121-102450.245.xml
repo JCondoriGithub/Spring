@@ -1,5 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?><testrun name="springhello" project="springhello" tests="1" started="1" failures="0" errors="0" ignored="0">
-  <testsuite name="springhello.SpringTest" time="0.614" displayname="SpringTest" uniqueid="[engine:junit-jupiter]/[class:springhello.SpringTest]">
-    <testcase name="test" classname="springhello.SpringTest" time="0.614" displayname="test()" uniqueid="[engine:junit-jupiter]/[class:springhello.SpringTest]/[method:test()]"/>
-  </testsuite>
-</testrun>
