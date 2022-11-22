@@ -16,11 +16,4 @@
     	<!-- <property name="group" ref="admingroup"></property>-->
     </bean>
     
-    <bean id="userfactory" class="springhello.UserFactory"></bean>
-    
-    <bean id="u2" class="springhello.User" factory-bean="userfactory" factory-method="createUser">
-    	<constructor-arg name="name" value="Antonio"></constructor-arg>
-    	<constructor-arg name="group" ref="admingroup"></constructor-arg>
-    </bean>		<!-- per gli altri attributi si possono invocare i setter -->
-    
 </beans>

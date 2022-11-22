@@ -15,10 +15,12 @@ class SpringTest {
 		ClassPathXmlApplicationContext ctx = new ClassPathXmlApplicationContext("beans.xml");
 
 		User u1 = ctx.getBean("u1", User.class);
-		System.out.println("u1: " + u1);
+		System.out.println("getBean per nome/id: " + u1);
 		
-		User u2 = ctx.getBean("u2", User.class);
-		System.out.println("u2: " + u2);
+		Map<String, User> res = ctx.getBeansOfType(User.class);
+		for(User user: res.values()) {
+			System.out.println(user);
+		}
 		
 		ctx.close();
 	}

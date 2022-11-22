@@ -1,0 +1,9 @@
+package springhello;
+
+public class UserFactory {
+
+	public User createUser(String name, String surname, Group group) {
+		
+		
+	}
+}
