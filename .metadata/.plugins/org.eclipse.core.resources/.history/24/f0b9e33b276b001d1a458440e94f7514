@@ -1,0 +1,10 @@
+package test;
+
+import org.springframework.beans.factory.annotation.Value;
+
+public class Calcolatrice {
+
+	public Calcolatrice(@Value("5") int base) {
+		System.out.println("creo la calcolatrice di base: " + base);
+	}
+}

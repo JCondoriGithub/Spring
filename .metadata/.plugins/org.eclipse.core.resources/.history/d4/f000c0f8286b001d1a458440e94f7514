@@ -26,6 +26,7 @@ class SpringTest {
 		System.out.println("u2: " + u2);*/
 		
 		Calcolatrice c = ctx2.getBean(Calcolatrice.class);
+		System.out.println("c: " + c);
 		
 		ctx.close();
 	}
