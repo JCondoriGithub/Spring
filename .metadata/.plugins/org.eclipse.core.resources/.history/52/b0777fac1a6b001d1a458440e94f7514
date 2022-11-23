@@ -16,9 +16,7 @@
 		<property name="name" value="USER"></property>
 	</bean>
 
-    <bean id="u1" class="springhello.User" scope="singleton">
-    	<property name="surname" value="Rossi"></property>
-    </bean>
+    <bean id="u1" class="springhello.User" scope="singleton"></bean>	<!-- si dichiara solo il nome del bean -->
     
 	<bean id="userfactory" class="springhello.UserFactory"></bean>
     

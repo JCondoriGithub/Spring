@@ -18,7 +18,7 @@ class SpringTest {
 		User u1 = ctx.getBean("u1", User.class);
 		System.out.println("u1: " + u1);
 		
-		User u2 = ctx.getBean("utenteProva", User.class);	// il nome del bean è quello dichiarato in annotazione e imposta le proprietà solo dalle annotazioni
+		User u2 = ctx.getBean("user", User.class);
 		System.out.println("u2: " + u2);
 		
 		ctx.close();
