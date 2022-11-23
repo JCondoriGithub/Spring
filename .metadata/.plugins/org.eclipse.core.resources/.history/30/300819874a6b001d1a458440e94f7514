@@ -1,0 +1,12 @@
+package test;
+
+public class ClasseInLibreria {
+
+	private String msg;
+
+	public ClasseInLibreria(String msg) {
+		this.msg = msg;
+		System.out.println(msg);
+	}
+	
+}

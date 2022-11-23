@@ -1,0 +1,13 @@
+package test;
+
+import org.springframework.context.annotation.Configuration;
+import org.springframework.stereotype.Component;
+
+@Component
+@Configuration
+public class TestFactory {
+
+	public ClasseInLibreria crea() {
+		return new ClasseInLibreria("sono una classe non accesibile facilmente");
+	}
+}

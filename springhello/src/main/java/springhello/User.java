@@ -7,7 +7,7 @@ import org.springframework.context.annotation.Scope;
 import org.springframework.stereotype.Component;
 import org.springframework.beans.factory.DisposableBean;
 
-@Component("utenteProva")		// quando spring vede l'annotazione, si crea la descrizione di un nuovo bean in base alle annotazioni della classe
+@Component("utenteProva")
 @Scope("prototype")
 public class User implements InitializingBean, DisposableBean {
 
