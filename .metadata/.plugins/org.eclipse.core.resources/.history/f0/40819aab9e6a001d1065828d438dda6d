@@ -1,19 +1,11 @@
 package springhello;
 
 import org.springframework.beans.factory.InitializingBean;
-import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.beans.factory.annotation.Value;
 import org.springframework.beans.factory.DisposableBean;
 
 public class User implements InitializingBean, DisposableBean {
 
-	@Value("user1")		// il valore di "login" sarà il seguente
-	private String login;
-	
-	private String password, name, surname;
-	
-	@Autowired	// cercherà il bean che si chiama come l'attributo, altrimenti cerca qualsiasi bean di quella classe
-//	@Qualifier("admingroup")  gli assegnerà il bean "admingroup"
+	private String login, password, name, surname;
 	private Group group;
 
 	public User() {

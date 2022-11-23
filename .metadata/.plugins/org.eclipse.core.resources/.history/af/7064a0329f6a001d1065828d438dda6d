@@ -18,6 +18,9 @@ class SpringTest {
 		User u1 = ctx.getBean("u1", User.class);
 		System.out.println("u1: " + u1);
 		
+		User u2 = ctx.getBean("u2", User.class);
+		System.out.println("u2: " + u2);
+		
 		ctx.close();
 	}
 }
