@@ -5,6 +5,14 @@
     <fullyQualifiedTypeName name="org.springframework.beans.factory.DisposableBean"/>
     <fullyQualifiedTypeName name="org.springframework.beans.factory.InitializingBean"/>
     <fullyQualifiedTypeName name="org.springframework.context.support.FileSystemXmlApplicationContext"/>
-    <fullyQualifiedTypeName name="org.springframework.beans.factory.annotation.Value"/>
     <fullyQualifiedTypeName name="org.springframework.beans.factory.annotation.Autowired"/>
+    <fullyQualifiedTypeName name="org.springframework.context.annotation.Scope"/>
+    <fullyQualifiedTypeName name="org.springframework.beans.factory.annotation.Value"/>
+    <fullyQualifiedTypeName name="org.springframework.context.annotation.AnnotationConfigApplicationContext"/>
+    <fullyQualifiedTypeName name="test.Calcolatrice"/>
+    <fullyQualifiedTypeName name="org.springframework.stereotype.Component"/>
+    <fullyQualifiedTypeName name="org.springframework.context.annotation.Configuration"/>
+    <fullyQualifiedTypeName name="org.springframework.context.annotation.Bean"/>
+    <fullyQualifiedTypeName name="org.junit.jupiter.api.TestFactory"/>
+    <fullyQualifiedTypeName name="test.ClasseInLibreria"/>
 </qualifiedTypeNameHistroy>
