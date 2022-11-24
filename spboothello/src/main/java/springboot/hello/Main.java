@@ -8,7 +8,7 @@ import org.springframework.stereotype.Component;
 public class Main implements CommandLineRunner {	// springboot crea il container, recupera i bean che implementano l'interfaccia e invoca il loro metodo "run"
 
 	@Autowired
-	Calcolatrice calc;
+	Calcolatrice calc;	// si innietta l'implementazione di "Calcolatrice". Quella che ha l'annotazione @Primary o tramite @Qualifier
 	
 	@Override
 	public void run(String... args) throws Exception {
