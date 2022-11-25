@@ -36,6 +36,10 @@
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-devtools</artifactId>
 		</dependency>
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-thymeleaf</artifactId>
+		</dependency>	<!-- è un template engine, quindi un modulo che prende in ingresso: un contenuto testuale (template) e dei dati per popolare il tamplate. Restituisce un nuovo template con i dati integrati -->
 	</dependencies>
 
 	<build>

@@ -8,9 +8,8 @@ import org.springframework.web.bind.annotation.ResponseBody;
 public class HomeController {
 
 	@RequestMapping("/")	// indica che questo metodo risponde al path "/"
-	@ResponseBody		// indica che il contenuto del return farà parte della renderizzazione della pagina
 	public String index() {
-		return "Hello world!";
+		return "index";		// si inserice il nome, senza l'estenzione, del template che si vuole usare. I templates di thymeleaf vengono cercati da spring in resources
 	}
 
 	@RequestMapping("demo")
