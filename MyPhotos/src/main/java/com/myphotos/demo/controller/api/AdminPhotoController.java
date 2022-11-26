@@ -2,6 +2,7 @@ package com.myphotos.demo.controller.api;
 
 import java.util.Optional;
 
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestBody;
@@ -16,11 +17,11 @@ import com.myphotos.demo.service.PhotoService;
 @RestController
 public class AdminPhotoController {
 
+	@Autowired		// spring cercherà il bean che si chiama come l'attributo, altrimenti cerca qualsiasi bean di quella classe
 	private PhotoService photoservice;
 	
 	public AdminPhotoController() {
 		
-		photoservice = new PhotoService();	// il controler instanzia il service per poi utilizzare i suoi metodi
 	}
 
 	@RequestMapping("admin/api/photos")

@@ -4,10 +4,13 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.Optional;
 
+import org.springframework.stereotype.Service;
+
 import com.myphotos.demo.model.Photo;
 
 // si vuole aggiungere un livello di astrazione per la gestione delle foto, perciò si crea questa classe-service per separare i controller dalla logica CRUD sulle foto, quindi i controller devono solo invocare i metodi CRUD del service
 
+@Service	// si indica che questo è un componente di tipo service, quindi spring "sa" che i controller hanno bisogno di una dipendenza di tipo PhotoService in questo caso
 public class PhotoService {
 
 	private List<Photo> list = new ArrayList<Photo>();

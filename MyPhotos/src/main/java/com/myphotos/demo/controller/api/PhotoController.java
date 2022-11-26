@@ -2,6 +2,7 @@ package com.myphotos.demo.controller.api;
 
 import java.util.Optional;
 
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -14,11 +15,11 @@ import com.myphotos.demo.service.PhotoService;
 @RestController		// si indica che questo è un controller di tipo rest
 public class PhotoController {
 	
+	@Autowired		// questa dipendenza, quindi il bean della classe, verrà istanziata ed inniettata da spring
 	private PhotoService photoservice;
 	
 	public PhotoController() {
 		
-		photoservice = new PhotoService();	// il controler instanzia il service per poi utilizzare i suoi metodi
 	}
 
 	@RequestMapping("api/photos")
