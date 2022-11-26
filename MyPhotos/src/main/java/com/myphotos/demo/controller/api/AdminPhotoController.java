@@ -3,6 +3,7 @@ package com.myphotos.demo.controller.api;
 import java.util.Optional;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.http.HttpStatus;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestBody;
@@ -12,13 +13,14 @@ import org.springframework.web.bind.annotation.RestController;
 import org.springframework.web.server.ResponseStatusException;
 
 import com.myphotos.demo.model.Photo;
-import com.myphotos.demo.service.PhotoService;
+import com.myphotos.demo.service.InterfacePhotoService;
 
 @RestController
 public class AdminPhotoController {
 
-	@Autowired		// spring cercherà il bean che si chiama come l'attributo, altrimenti cerca qualsiasi bean di quella classe
-	private PhotoService photoservice;
+	@Autowired
+	@Qualifier("mainPhotoService")
+	private InterfacePhotoService photoservice;		// questa dipendenza, quindi il bean con nome "mainPhotoService" di una classe che implementa l'interfaccia, verrà istanziata ed inniettata da spring
 	
 	public AdminPhotoController() {
 		
