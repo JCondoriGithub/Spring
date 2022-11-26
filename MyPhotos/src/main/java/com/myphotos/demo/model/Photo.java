@@ -3,7 +3,7 @@ package com.myphotos.demo.model;
 public class Photo {
 
 	private int id;
-	public String url;
+	private String url;
 	
 	public Photo() {
 

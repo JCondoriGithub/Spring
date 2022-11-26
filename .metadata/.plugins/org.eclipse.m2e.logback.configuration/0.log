@@ -2779,3 +2779,52 @@ org.eclipse.core.runtime.CoreException: Launch configuration BootdemoApplication
 2022-11-25 16:34:32,972 [Worker-39: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource
 2022-11-25 16:34:32,983 [Worker-39: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 30 resources
 2022-11-25 16:34:32,992 [Worker-39: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory /home/josue/Scrivania/spring/MyPhotos/src/test/resources
+2022-11-25 16:48:39,116 [Worker-39: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource
+2022-11-25 16:48:39,126 [Worker-39: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 30 resources
+2022-11-25 16:48:39,148 [Worker-39: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory /home/josue/Scrivania/spring/MyPhotos/src/test/resources
+2022-11-25 16:50:57,328 [Worker-44: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource
+2022-11-25 16:50:57,336 [Worker-44: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 30 resources
+2022-11-25 16:50:57,339 [Worker-44: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory /home/josue/Scrivania/spring/MyPhotos/src/test/resources
+2022-11-25 16:51:43,166 [Worker-44: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource
+2022-11-25 16:51:43,175 [Worker-44: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 30 resources
+2022-11-25 16:51:43,187 [Worker-44: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory /home/josue/Scrivania/spring/MyPhotos/src/test/resources
+2022-11-25 16:56:26,880 [Worker-50: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource
+2022-11-25 16:56:26,889 [Worker-50: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 30 resources
+2022-11-25 16:56:26,893 [Worker-50: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory /home/josue/Scrivania/spring/MyPhotos/src/test/resources
+2022-11-25 16:56:31,917 [Worker-49: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource
+2022-11-25 16:56:31,927 [Worker-49: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 30 resources
+2022-11-25 16:56:31,931 [Worker-49: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory /home/josue/Scrivania/spring/MyPhotos/src/test/resources
+2022-11-25 17:12:55,587 [Worker-55: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource
+2022-11-25 17:12:55,596 [Worker-55: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 30 resources
+2022-11-25 17:12:55,601 [Worker-55: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory /home/josue/Scrivania/spring/MyPhotos/src/test/resources
+2022-11-25 17:16:49,264 [Worker-57: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource
+2022-11-25 17:16:49,273 [Worker-57: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 30 resources
+2022-11-25 17:16:49,278 [Worker-57: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory /home/josue/Scrivania/spring/MyPhotos/src/test/resources
+2022-11-25 17:27:49,904 [Worker-60: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource
+2022-11-25 17:27:49,910 [Worker-60: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 30 resources
+2022-11-25 17:27:49,913 [Worker-60: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory /home/josue/Scrivania/spring/MyPhotos/src/test/resources
+2022-11-25 17:28:07,222 [Worker-62: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource
+2022-11-25 17:28:07,229 [Worker-62: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 30 resources
+2022-11-25 17:28:07,231 [Worker-62: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory /home/josue/Scrivania/spring/MyPhotos/src/test/resources
+2022-11-25 17:29:02,456 [Worker-59: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource
+2022-11-25 17:29:02,462 [Worker-59: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 30 resources
+2022-11-25 17:29:02,465 [Worker-59: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory /home/josue/Scrivania/spring/MyPhotos/src/test/resources
+2022-11-25 17:32:51,986 [Worker-63: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource
+2022-11-25 17:32:51,994 [Worker-63: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 30 resources
+2022-11-25 17:32:51,997 [Worker-63: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory /home/josue/Scrivania/spring/MyPhotos/src/test/resources
+2022-11-25 17:39:16,426 [Worker-67: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource
+2022-11-25 17:39:16,437 [Worker-67: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 30 resources
+2022-11-25 17:39:16,465 [Worker-67: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory /home/josue/Scrivania/spring/MyPhotos/src/test/resources
+2022-11-25 17:39:57,291 [Worker-67: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource
+2022-11-25 17:39:57,303 [Worker-67: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 30 resources
+2022-11-25 17:39:57,310 [Worker-67: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory /home/josue/Scrivania/spring/MyPhotos/src/test/resources
+2022-11-25 17:40:57,616 [Worker-64: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource
+2022-11-25 17:40:57,632 [Worker-64: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 30 resources
+2022-11-25 17:40:57,645 [Worker-64: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory /home/josue/Scrivania/spring/MyPhotos/src/test/resources
+2022-11-25 17:42:49,119 [Worker-70: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource
+2022-11-25 17:42:49,130 [Worker-70: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 30 resources
+2022-11-25 17:42:49,135 [Worker-70: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory /home/josue/Scrivania/spring/MyPhotos/src/test/resources
+2022-11-26 14:01:58,064 [Worker-2: Loading available Gradle versions] INFO  o.e.b.c.i.u.g.PublishedGradleVersions - Gradle version information cache is out-of-date. Trying to update.
+2022-11-26 14:09:16,660 [Worker-23: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource
+2022-11-26 14:09:16,702 [Worker-23: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 30 resources
+2022-11-26 14:09:16,709 [Worker-23: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory /home/josue/Scrivania/spring/MyPhotos/src/test/resources
