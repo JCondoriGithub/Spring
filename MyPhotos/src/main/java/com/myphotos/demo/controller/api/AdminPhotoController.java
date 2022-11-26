@@ -22,9 +22,9 @@ public class AdminPhotoController {
 	
 	public AdminPhotoController() {
 		
-		list.add(new Photo(1, "./img/1.png"));
-		list.add(new Photo(2, "./img/2.png"));
-		list.add(new Photo(3, "./img/3.png"));
+		list.add(new Photo(1, "./img/01.png"));
+		list.add(new Photo(2, "./img/02.png"));
+		list.add(new Photo(3, "./img/03.png"));
 		
 		lastId = 3;
 	}
