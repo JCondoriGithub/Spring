@@ -4,13 +4,10 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.Optional;
 
-import org.springframework.stereotype.Service;
-
 import com.myphotos.demo.model.Photo;
 
 // si vuole aggiungere un livello di astrazione per la gestione delle foto, perciò si crea questa classe-service per separare i controller dalla logica CRUD sulle foto, quindi i controller devono solo invocare i metodi CRUD del service
 
-@Service("mainPhotoService")	// si indica che questo è un componente di tipo service e il bean che ne deriva avrà il nome "mainPhotoService"
 public class PhotoService implements InterfacePhotoService {
 
 	private List<Photo> list = new ArrayList<Photo>();
