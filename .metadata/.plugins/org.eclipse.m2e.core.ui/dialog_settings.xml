@@ -69,6 +69,7 @@
 	</section>
 	<section name="MavenProjectImportWizardPage">
 		<list key="rootDirectory">
+			<item value="/home/josue/Scrivania/disperate/Spring/MyPhotos"/>
 			<item value="/home/josue/Scrivania/spring/demo"/>
 		</list>
 		<list key="projectNameTemplate">

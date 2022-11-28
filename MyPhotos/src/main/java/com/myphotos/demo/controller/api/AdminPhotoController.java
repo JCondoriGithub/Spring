@@ -15,6 +15,8 @@ import org.springframework.web.server.ResponseStatusException;
 import com.myphotos.demo.model.Photo;
 import com.myphotos.demo.service.InterfacePhotoService;
 
+import jakarta.validation.Valid;
+
 @RestController
 public class AdminPhotoController {
 
@@ -44,12 +46,12 @@ public class AdminPhotoController {
 	}
 
 	@RequestMapping(value="admin/api/photos", method=RequestMethod.POST)	// si indica che la action risponde solo a richieste POST
-	public Photo create(@RequestBody Photo photo) {		// si indica che il body della richiesta deve essere inserito nel parametro "photo"
+	public Photo create(@Valid @RequestBody Photo photo) {		// si indica che il body della richiesta deve essere inserito nel parametro "photo"
 		return photoservice.create(photo);
 	}
 	
 	@RequestMapping(value="admin/api/photos/{id}", method=RequestMethod.PUT)	// si indica che la action risponde solo a richieste PUT
-	public Photo update(@PathVariable int id, @RequestBody Photo photo) {
+	public Photo update(@Valid @PathVariable int id, @RequestBody Photo photo) {	// l'annotazione @Valid, indica che è in questo metodo che deve scattare la validazione impostata in "Photo"
 		
 		Optional<Photo> foundPhoto = photoservice.update(id, photo);
 		

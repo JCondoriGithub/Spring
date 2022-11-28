@@ -1,9 +1,12 @@
 package com.myphotos.demo.model;
 
+import org.hibernate.validator.constraints.Length;
+
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
 import jakarta.persistence.Id;
+import jakarta.validation.constraints.NotBlank;
 
 @Entity		// si indica che questa è una classe associata ad una tabella nel DB
 public class Photo {
@@ -12,6 +15,8 @@ public class Photo {
 	@GeneratedValue(strategy = GenerationType.IDENTITY)		// si indica che questo pk deve essere generato automaticamente e in modo autoincrement
 	private int id;
 	
+	@NotBlank(message = "this field is required")	// si indica a spring che se una foto non ha "url", si stampa nei log il messaggio
+	@Length(min = 2, message = "min length is 2 chars")		// si fa in modo che la foto non venga salvata se l'url non è almeno di 2 caratteri
 	private String url;
 	
 	public Photo() {
