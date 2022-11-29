@@ -2,9 +2,15 @@ springboot:
     messaggio: ciao a tutti
     valore: 5
     
+server:
+  port: 8080
+    
 spring:
   datasource:
     url: jdbc:mysql://localhost/ecommerce
     username: root
     password: PuchiPuchi25!
     
+jpa:
+  hibernate:
+    ddl-auto: update

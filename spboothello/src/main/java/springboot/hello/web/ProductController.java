@@ -2,6 +2,7 @@ package springboot.hello.web;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
+import org.springframework.transaction.annotation.Transactional;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
@@ -32,6 +33,7 @@ public class ProductController {
 	}
 
 	@PostMapping("add")
+	@Transactional
 	public String add(@RequestParam String name,
 			@RequestParam int price, Model m) {
 		pm.create(name, price);		
@@ -39,6 +41,7 @@ public class ProductController {
 	}
 
 	@GetMapping("remove/{id}")
+	@Transactional
 	public String remove(@PathVariable long id, Model m) {
 		pm.delete(id);
 		return products(m);
