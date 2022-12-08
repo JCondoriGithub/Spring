@@ -9,5 +9,5 @@ public class AdminController {
 	@RequestMapping("admin")
 	public String admin() {
 		return "admin";
-	}
+	}        
 }
